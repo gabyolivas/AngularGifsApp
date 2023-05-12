@@ -1,0 +1,18 @@
+<div class="card mb-2 text-center bg-dark">
+    <!-- <img 
+        [src]="gif.images.downsized_medium.url" 
+        [alt]="gif.title"
+        class="card-img-top"> -->
+
+    <shared-lazy-image 
+        class="text-warning"
+        [url]="gif.images.downsized_medium.url"
+        [alt]="gif.title || 'Not Found'"
+    ></shared-lazy-image>
+
+    <div class="card-body">
+        <p class="card-text text-info">
+            {{gif.title || "Not Found"}}
+        </p>
+    </div>
+</div>

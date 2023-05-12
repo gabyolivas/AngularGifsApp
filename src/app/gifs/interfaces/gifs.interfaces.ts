@@ -23,7 +23,7 @@ export interface Gifs {
     import_datetime:            Date;
     trending_datetime:          string;
     images:                     Images;
-    user?:                      User;
+    user?:                       User;
     analytics_response_payload: string;
     analytics:                  Analytics;
 }
